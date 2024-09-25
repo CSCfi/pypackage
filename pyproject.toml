@@ -14,4 +14,4 @@ classifiers = [
 ]
 
 [project.scripts]
-pypackage = "pypackage.cli:cli"
+pypackage-cli = "pypackage.cli:cli"

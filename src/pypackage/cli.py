@@ -2,6 +2,8 @@ import argparse
 from .module import greet
 
 def cli():
+    """Entrypoint to the command line interface"""
+
     # Parse arguments
     parser = argparse.ArgumentParser(description="Command line interface")
     parser.add_argument('name', type=str, help="Name")
@@ -11,5 +13,5 @@ def cli():
     greet(args.name)
 
 if __name__ == "__main__":
-    # Entrypoint to the command line interface
+    # Facilitate scripting usage
     cli()

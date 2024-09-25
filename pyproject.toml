@@ -1,0 +1,17 @@
+[project]
+name = "pypackage"
+version = "0.1.0"
+authors = [
+  { name="Jaan Tollander de Balsch", email="jaan.tollander.de.balsch@csc.fi" },
+]
+description = "An example package with a command line interface."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pypackage = "pypackage.cli:cli"

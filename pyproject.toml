@@ -16,4 +16,4 @@ dependencies = [
 ]
 
 [project.scripts]
-pypackage-cli = "pypackage.cli:cli"
+pypackage-cli = "pypackage.cli:main"

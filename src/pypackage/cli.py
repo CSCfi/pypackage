@@ -1,7 +1,7 @@
 import argparse
 from .module import greet
 
-def cli():
+def main():
     """Entrypoint to the command line interface"""
 
     # Parse arguments
@@ -14,4 +14,4 @@ def cli():
 
 if __name__ == "__main__":
     # Facilitate scripting usage
-    cli()
+    main()

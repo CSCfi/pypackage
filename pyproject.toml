@@ -1,6 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# Default versioning behavior, use the version tag from Git
+version_scheme = "post-release"
+local_scheme = "node-and-date"
+
 [project]
 name = "pypackage"
-version = "0.1.0"
+dynamic = [
+  "version"
+]
 authors = [
   { name="Jaan Tollander de Balsch", email="jaan.tollander.de.balsch@csc.fi" },
 ]
@@ -8,9 +19,9 @@ description = "An example package with a command line interface."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
 ]
 dependencies = [
 ]
